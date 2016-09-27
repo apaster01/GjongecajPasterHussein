@@ -19,6 +19,8 @@ int main()
     for(;;)
     {
         Pin_LED_Write(~Pin_LED_Read());
+        Pin_1_Write(~Pin_1_Read());
+        Pin_2_Write(~Pin_2_Read());
         CyDelay(1000);
         /* Place your application code here. */
     }
